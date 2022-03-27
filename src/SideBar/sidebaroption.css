@@ -1,0 +1,59 @@
+.sidebar__option--link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sidebar__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 10px;
+  font-family: "Segoe UI";
+  width: 100%;
+  color: #4e4e4e;
+  font-weight: 500;
+}
+
+.sidebar__option.type-channel .option__icon {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.sidebar__option.type-channel .option__icon .MuiAvatar-root {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.sidebar__option:hover .option__icon, .sidebar__option--active .option__icon {
+  color: #ff0000;
+}
+
+.sidebar__option--active {
+  background-color: #d8d8d8;
+  color: #000;
+}
+
+.sidebar__option:hover {
+  background-color: #ececec;
+}
+
+.sidebar__option .option__icon {
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
+  margin-right: 20px;
+  margin-left: 12px;
+}
+
+.sidebar__option .option__icon svg {
+  font-size: 1.3rem;
+}
+
+.sidebar__option .option__text {
+  font-size: 1rem;
+}

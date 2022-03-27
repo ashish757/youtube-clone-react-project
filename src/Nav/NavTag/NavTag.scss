@@ -1,0 +1,19 @@
+.tags__tag {
+    border: 1.99px solid #c0c0c0;
+    background-color: #ececec;
+    border-radius: 19px;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+    min-width: fit-content;
+    transition: background 300ms;
+    -webkit-tap-highlight-color: transparent;
+
+
+    &.active {
+        background-color: #686767;
+        padding: 7px 11.9px;
+        border: none;
+        color: #ffffff;
+    }
+}

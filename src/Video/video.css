@@ -1,0 +1,101 @@
+/* w s */
+.video__img {
+  width: 100%;
+  position: relative;
+}
+
+.video__img img {
+  width: 100%;
+  position: relative;
+}
+
+.video__img .video__duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0px 3px;
+}
+
+.video .video__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 7px 7px 2px;
+}
+
+.video .video__info .video__top {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video .video__info .video__top .video__title {
+  min-height: 47px;
+  max-height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.04rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video .video__info .video__top .channel__image {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  background-color: #ccc;
+  border-radius: 50%;
+  color: #585858;
+  margin-left: 2px;
+  margin-right: 6px;
+}
+
+.video .video__info .video__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Verdana;
+  padding: 0 0 0px 35px;
+  font-size: .95rem;
+  margin-top: 4px;
+}
+
+.video .video__info .video__middle .video__verified {
+  margin-left: 5px;
+  fill: #605f5f;
+  font-size: 1.19rem;
+}
+
+.video .video__info .video__bottom {
+  color: #605f5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 0 5px 35px;
+}
+
+.video .video__info .video__bottom .delimiter {
+  font-weight: 900;
+  font-family: fangsong;
+  -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+}

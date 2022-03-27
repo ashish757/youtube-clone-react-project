@@ -1,0 +1,32 @@
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f3f3f3;
+}
+
+main .home {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.navOff {
+  min-height: calc(50px + 51px);
+}
+
+.sideOff {
+  min-width: 77px;
+}
+
+@media (max-width: 700px) {
+  .sideOff {
+    min-width: 0px;
+  }
+}
+
+@media (min-width: 1367px) {
+  .sideOff.bar--active {
+    min-width: 206px;
+  }
+}

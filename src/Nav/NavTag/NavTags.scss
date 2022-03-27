@@ -1,0 +1,40 @@
+@import "../../globalVariables";
+
+.nav-tag {
+    // padding: 9px 5px;
+    border-bottom: 1px solid #c2c2c2;
+    border-top: 1px solid #c2c2c2;
+    margin-left: auto;
+    max-width: calc(100% - #{$sideNav-x});
+    overflow-x: scroll;
+    font-size: 0.9rem;
+    font-family: Verdana;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    @media (max-width: 700px) {
+        & {
+            max-width: 100%;
+        }
+    }
+    @media (min-width: 1367px) {
+        &.--sidebar-active {
+            max-width: calc(100% - 206px);
+        }
+    }
+}
+.nav-tag__tags {
+    display: flex;
+    align-items: center;
+    height: $navTagHeight;
+
+    .tag__feedback {
+        color: rgb(28, 81, 255);
+        font-weight: 700;
+        font-family: system-ui;
+        cursor: pointer;
+        min-width: fit-content;
+        margin-left: 5px;
+    }
+}

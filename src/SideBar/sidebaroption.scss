@@ -1,0 +1,48 @@
+@import "../globalVariables";
+.sidebar__option--link {
+    color: #000000;
+    text-decoration: none;
+}
+.sidebar__option {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding: 6px 10px;
+  font-family: "Segoe UI";
+  width: 100%;
+  color: #4e4e4e;
+  font-weight: 500;
+  &.type-channel .option__icon {
+    transform: translateY(0);
+    .MuiAvatar-root {
+      max-width: 25px;
+      max-height: 25px;
+    }
+  }
+
+  &:hover,
+  &--active {
+    .option__icon {
+      color: #ff0000;
+    }
+  }
+  &--active {
+    background-color: $sidebarOptionActiveBg;
+    color: #000;
+  }
+  &:hover {
+    background-color: $sidebarOptionHoverBg;
+  }
+
+  .option__icon {
+    transform: translateY(2px);
+    margin-right: $sidebarOptionIconRight;
+    margin-left: $sidebarOptionIconLeft;
+    svg {
+      font-size: 1.3rem;
+    }
+  }
+  .option__text {
+    font-size: 1rem;
+  }
+}

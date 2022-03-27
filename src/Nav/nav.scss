@@ -1,0 +1,147 @@
+@import '../globalVariables';
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  top: 0px;
+  background-color: #ffffff;
+}
+.nav {
+  width: 100%;
+  height: $navHeight;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //  @media (min-width: 1367px) {
+  //   & {
+  //     max-width: calc(100% - 100px);
+  //     margin-left: auto;
+  //   }
+  // }
+
+  .nav__start {
+    display: flex;
+    align-items: center;
+
+    .nav__toggler {
+      margin: 0px 20px 0px 23px;
+      cursor: pointer;
+    }
+  }
+
+  .nav__center {
+    max-width: 480px;
+    width: 50%;
+    min-width: 230px;
+
+    .nav__search--icon {
+      display: none;
+    }
+    .nav__search {
+      display: flex;
+      align-items: center;
+      .nav__back--icon {
+        cursor: pointer;
+      }
+      input,
+      button {
+        border-radius: 0;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+      input {
+        padding: 7px 10px;
+        width: 80%;
+      }
+
+      button {
+        padding: 1px 10px;
+        width: 15%;
+        height: 100%;
+        min-width: 56px;
+        background-color: #f3f3f3;
+        svg {
+          height: 24px;
+          width: 19px;
+          fill: rgb(85, 85, 85);
+        }
+      }
+    }
+
+    @media (max-width: 580px) {
+      .nav__search {
+        display: none;
+        input, button {
+          border: none;
+          background-color: transparent !important;
+        }
+        input {
+          border-bottom: 1.9px solid  rgb(4, 0, 255);
+        }
+        button {
+          transform: translateY(6px);
+          cursor: pointer;
+        }
+
+      }
+      & {
+        min-width: 0px;
+        width: min-content;
+        margin-left: auto;
+      }
+      &.mob__search--active {
+        background-color: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        display: flex;
+        padding-left: 10px;
+        .nav__search {
+          display: flex;
+          width: inherit;
+          margin-left: 10px;
+          justify-content: center;
+
+          input {
+            width: 74%;
+          }
+          button {
+            padding-left: 0;
+            padding-right: 0;
+            // margin-left: auto;
+          }
+        }
+        .nav__search--icon {
+          display: none;
+        }
+      }
+      .nav__search--icon {
+        display: block;
+        margin-right: 15px;
+        cursor: pointer;
+        width: fit-content;
+      }
+    }
+  }
+
+  .nav__end {
+    .nav__sign-in button {
+      margin-right: 19px;
+      padding: 9px 13px;
+      color: #fff;
+      background-color: #059bff;
+      border: 1px solid #059bff;
+      border-radius: 9px;
+      cursor: pointer;
+      @media (max-width: 580px) { 
+        & {
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}

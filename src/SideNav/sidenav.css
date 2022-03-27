@@ -1,0 +1,33 @@
+.sidenav {
+  background-color: #ffffff;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  padding: 0px 0px 10px 0px;
+  height: 100vh;
+  max-width: 77px;
+  width: 77px;
+  z-index: 5;
+  border-top: 1px solid #d2d2d2;
+}
+
+@media (max-width: 700px) {
+  .sidenav {
+    max-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    z-index: 7;
+    padding: 0;
+    right: 0;
+    min-width: 100%;
+  }
+}
